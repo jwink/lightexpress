@@ -28,6 +28,11 @@
 <script>
 !(function(){
     "use strict"
+    console.log("what");
+    var sWidth = 400;
+    var sHeight = 400;
+    document.getElementById("graph").style.width =  sWidth + "px";
+    document.getElementById("graph").style.height =  sHeight + "px";
     
     var width,height;
     var chartWidth, chartHeight;
@@ -66,8 +71,8 @@
         margin = {top:40, left:100, bottom:40, right:0 }
         
         
-        chartWidth = width - (margin.left+margin.right)
-        chartHeight = height - (margin.top+margin.bottom)
+        chartWidth = width - (margin.left+margin.right);
+        chartHeight = height - (margin.top+margin.bottom);
         
         svg.attr("width", width).attr("height", height)
         
